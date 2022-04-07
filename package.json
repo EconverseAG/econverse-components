@@ -19,5 +19,16 @@
   "bugs": {
     "url": "https://github.com/EduardoRodriguesF/econverse-components/issues"
   },
-  "homepage": "https://github.com/EduardoRodriguesF/econverse-utils#readme"
+  "homepage": "https://github.com/EduardoRodriguesF/econverse-utils#readme",
+  "dependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.4.1",
+    "@types/react": "^17.0.43",
+    "@vtex/tsconfig": "^0.6.0",
+    "jest": "^27.5.1",
+    "typescript": "^4.6.3"
+  }
 }
