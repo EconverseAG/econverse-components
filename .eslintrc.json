@@ -33,17 +33,7 @@
     "react-hooks/exhaustive-deps": "warn",
     "react/jsx-props-no-spreading": "off",
     "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }],
-    "import/no-extraneous-dependencies": [
-      "error", 
-      {
-        "devDependencies": [
-          "**/*.test.ts", 
-          "**/*.test.tsx",
-          "**/*.stories.ts",
-          "**/*.stories.tsx"
-        ]
-      }
-    ],
+    "import/no-extraneous-dependencies": "off",
     "import/extensions": [
       "error",
       "ignorePackages",
