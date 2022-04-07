@@ -1,0 +1,23 @@
+{
+  "name": "econverse-components",
+  "version": "0.0.1",
+  "description": "Custom components for VTEX IO stores.\"",
+  "main": "index.js",
+  "author": "Eduardo Rodrigues <eduardo.rodrigues@econverse.com.br>",
+  "license": "MIT",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:EduardoRodriguesF/econverse-components.git"
+  },
+  "keywords": [
+    "components",
+    "react",
+    "vtex-io",
+    "ecommerce"
+  ],
+  "bugs": {
+    "url": "https://github.com/EduardoRodriguesF/econverse-components/issues"
+  },
+  "homepage": "https://github.com/EduardoRodriguesF/econverse-utils#readme"
+}
