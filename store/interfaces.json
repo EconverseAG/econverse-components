@@ -1,5 +1,8 @@
 {
   "e-tooltip": {
     "component": "Tooltip"
+  },
+  "e-accordion": {
+    "component": "Accordion"
   }
 }
