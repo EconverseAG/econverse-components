@@ -6,12 +6,19 @@ const Tooltip: React.FC<ITooltipProps> = ({
   label,
   children,
   borderRadius = '6px',
+  color = '#fff',
+  backgroundColor = '#000',
 }) => {
   const [isVisible, setIsVisible] = useState(false);
 
   return (
     <Wrapper>
-      <TooltipLabel borderRadius={borderRadius} isVisible={isVisible}>
+      <TooltipLabel
+        color={color}
+        backgroundColor={backgroundColor}
+        borderRadius={borderRadius}
+        isVisible={isVisible}
+      >
         {label}
       </TooltipLabel>
       <div

@@ -2,6 +2,8 @@ import styled, { css } from 'styled-components';
 
 interface ITooltipProps {
   isVisible: boolean;
+  color: string;
+  backgroundColor: string;
   borderRadius: string;
 }
 
@@ -21,8 +23,8 @@ export const TooltipLabel = styled.span<ITooltipProps>`
   left: 50%;
   font-size: 14px;
   cursor: default;
-  background: #000;
-  color: #fff;
+  background: ${({ backgroundColor }) => backgroundColor};
+  color: ${({ color }) => color};
   padding: 4px 12px;
   box-sizing: content-box;
   white-space: nowrap;
@@ -43,6 +45,7 @@ export const TooltipLabel = styled.span<ITooltipProps>`
     margin-left: -5px;
     border-width: 5px;
     border-style: solid;
-    border-color: #000 transparent transparent transparent;
+    border-color: ${({ backgroundColor }) => backgroundColor} transparent
+      transparent transparent;
   }
 `;
