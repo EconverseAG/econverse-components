@@ -2,6 +2,7 @@ import styled, { css } from 'styled-components';
 
 interface ITooltipProps {
   isVisible: boolean;
+  borderRadius: string;
 }
 
 export const Wrapper = styled.div`
@@ -16,6 +17,7 @@ export const TooltipLabel = styled.span<ITooltipProps>`
   opacity: 0;
   bottom: 150%;
   transform: translateX(-50%);
+  border-radius: ${({ borderRadius }) => borderRadius};
   left: 50%;
   font-size: 14px;
   cursor: default;

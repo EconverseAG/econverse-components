@@ -2,12 +2,18 @@ import React, { useState } from 'react';
 import ITooltipProps from './Tooltip.types';
 import { Wrapper, TooltipLabel } from './Tooltip.styles';
 
-const Tooltip: React.FC<ITooltipProps> = ({ label, children }) => {
+const Tooltip: React.FC<ITooltipProps> = ({
+  label,
+  children,
+  borderRadius = '6px',
+}) => {
   const [isVisible, setIsVisible] = useState(false);
 
   return (
     <Wrapper>
-      <TooltipLabel isVisible={isVisible}>{label}</TooltipLabel>
+      <TooltipLabel borderRadius={borderRadius} isVisible={isVisible}>
+        {label}
+      </TooltipLabel>
       <div
         onMouseEnter={() => setIsVisible(true)}
         onMouseLeave={() => setIsVisible(false)}
