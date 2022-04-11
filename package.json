@@ -1,6 +1,6 @@
 {
   "name": "econverse-components",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "Custom components for VTEX IO stores.\"",
   "main": "index.js",
   "author": "Eduardo Rodrigues <eduardo.rodrigues@econverse.com.br>",
