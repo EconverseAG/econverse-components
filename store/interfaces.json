@@ -4,5 +4,8 @@
   },
   "e-accordion": {
     "component": "Accordion"
+  },
+  "e-iframe": {
+    "component": "Iframe"
   }
 }
