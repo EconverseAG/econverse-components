@@ -44,6 +44,6 @@ const IframeSchema = {
       default: '',
     },
   },
-}
+};
 
-export default IframeSchema
+export default IframeSchema;
