@@ -1,11 +1,42 @@
 {
   "name": "econverse-components",
+  "private": false,
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint --ext js,jsx,ts,tsx .",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json}\"",
+    "storybook": "start-storybook -p 6006",
+    "build:storybook": "build-storybook",
+    "test": "jest --watch",
+    "test:coverage": "jest --coverage"
+  },
+  "lint-staged": {
+    "*.{ts,js,tsx,jsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{json,graphql,gql}": [
+      "prettier --write"
+    ]
+  },
+  "devDependencies": {
+    "@vtex/danger": "^0.2.9",
+    "@vtex/intl-equalizer": "^2.5.1",
+    "@vtex/prettier-config": "0.1.4",
+    "eslint": "7.12.1",
+    "eslint-config-vtex": "12.3.2",
+    "eslint-config-vtex-react": "^9.0.0",
+    "husky": "4.2.3",
+    "jest": "^27.5.1",
+    "lint-staged": "10.1.1",
+    "prettier": "2.0.2",
+    "storybook": "^6.4.20",
+    "typescript": "3.8.3"
+  },
   "version": "1.0.0",
   "description": "Custom components for VTEX IO stores.\"",
   "main": "index.js",
   "author": "Eduardo Rodrigues <eduardo.rodrigues@econverse.com.br>",
-  "license": "MIT",
-  "private": false,
   "repository": {
     "type": "git",
     "url": "git@github.com:EduardoRodriguesF/econverse-components.git"
@@ -19,23 +50,5 @@
   "bugs": {
     "url": "https://github.com/EduardoRodriguesF/econverse-components/issues"
   },
-  "homepage": "https://github.com/EduardoRodriguesF/econverse-utils#readme",
-  "devDependencies": {
-    "@vtex/danger": "^0.2.9",
-    "@vtex/intl-equalizer": "^2.5.1",
-    "@vtex/prettier-config": "^1.0.0",
-    "eslint": "^8.14.0",
-    "eslint-config-vtex": "^15.0.0",
-    "eslint-config-vtex-react": "^9.0.0",
-    "prettier": "^2.6.2",
-    "typescript": "^4.6.4",
-    "jest": "^27.5.1",
-    "storybook": "^6.4.20"
-  },
-  "scripts": {
-    "storybook": "start-storybook -p 6006",
-    "build:storybook": "build-storybook",
-    "test": "jest --watch",
-    "test:coverage": "jest --coverage"
-  }
+  "homepage": "https://github.com/EduardoRodriguesF/econverse-utils#readme"
 }
