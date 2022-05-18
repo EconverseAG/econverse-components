@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+- Added new **Similar Products** context.
+  - `useSimilarProducts` hook.
+  - `SimilarProductsProvider`.
 - Added new **Buy Together** context.
   - `useBuyTogether` hook.
   - `BuyTogetherProvider`.
