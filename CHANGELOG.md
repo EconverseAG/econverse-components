@@ -18,8 +18,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Changed
 
-- Remove `Tooltip` component.
-- Remove `Accordion` component.
+- Removed `Tooltip` component.
+- Removed `Accordion` component.
 
 ## [1.1.0] - 17-05-2022
 
