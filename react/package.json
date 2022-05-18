@@ -11,9 +11,7 @@
     "react-select": "^2.4.4",
     "react-slick": "^0.27.11",
     "react-verification-input": "^2.0.3",
-    "react-xml-parser": "^1.1.8",
-    "react-icons": "^4.3.1",
-    "styled-components": "^5.3.5"
+    "react-xml-parser": "^1.1.8"
   },
   "devDependencies": {
     "@babel/core": "^7.17.9",
