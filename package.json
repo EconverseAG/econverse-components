@@ -5,8 +5,6 @@
   "scripts": {
     "lint": "eslint --ext js,jsx,ts,tsx .",
     "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json}\"",
-    "storybook": "start-storybook -p 6006",
-    "build:storybook": "build-storybook",
     "test": "jest --watch",
     "test:coverage": "jest --coverage"
   },
@@ -20,9 +18,11 @@
     ]
   },
   "devDependencies": {
+    "@babel/core": "^7.17.12",
     "@vtex/danger": "^0.2.9",
     "@vtex/intl-equalizer": "^2.5.1",
     "@vtex/prettier-config": "0.1.4",
+    "babel-loader": "^8.2.5",
     "eslint": "^8.14.0",
     "eslint-config-vtex": "^15.0.0",
     "eslint-config-vtex-react": "^9.0.0",
@@ -30,7 +30,6 @@
     "jest": "^27.5.1",
     "lint-staged": "10.1.1",
     "prettier": "2.0.2",
-    "storybook": "^6.4.20",
     "typescript": "3.8.3"
   },
   "version": "1.0.0",
@@ -50,5 +49,6 @@
   "bugs": {
     "url": "https://github.com/EduardoRodriguesF/econverse-components/issues"
   },
-  "homepage": "https://github.com/EduardoRodriguesF/econverse-utils#readme"
+  "homepage": "https://github.com/EduardoRodriguesF/econverse-utils#readme",
+  "dependencies": {}
 }
