@@ -7,7 +7,7 @@ interface BuyTogetherContextType {
 
 interface BuyTogetherProviderProps {
   children: React.ReactNode;
-  maxLength?: number;
+  showUnavailable?: boolean;
 }
 
 export { BuyTogetherContextType, BuyTogetherProviderProps };

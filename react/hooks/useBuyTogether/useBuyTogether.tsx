@@ -18,7 +18,10 @@ import type {
 const BuyTogetherContext = createContext({} as BuyTogetherContextType);
 const useBuyTogether = () => useContext(BuyTogetherContext);
 
-function BuyTogetherProvider({ children }: BuyTogetherProviderProps) {
+function BuyTogetherProvider({
+  showUnavailable,
+  children,
+}: BuyTogetherProviderProps) {
   const [productsToBuyTogether, setProductsToBuyTogether] = useState([]);
 
   const product = useProduct();
@@ -30,17 +33,19 @@ function BuyTogetherProvider({ children }: BuyTogetherProviderProps) {
   const getProductInfo = useCallback(async () => {
     const productId = product?.product?.productId;
 
-    const { data } = await axios.get(
+    let { data } = await axios.get(
       `/api/catalog_system/pub/products/crossselling/showtogether/${productId}`,
     );
 
-    const availableProducts = data.filter(
-      (item: ProductTypes.Product) =>
-        item?.items[0].sellers[0].commertialOffer.AvailableQuantity > 0,
-    );
+    if (!showUnavailable) {
+      data = data.filter(
+        (item: ProductTypes.Product) =>
+          item?.items[0].sellers[0].commertialOffer.AvailableQuantity > 0,
+      );
+    }
 
-    setProductsToBuyTogether(availableProducts);
-  }, [product]);
+    setProductsToBuyTogether(data);
+  }, [product, showUnavailable]);
 
   useEffect(() => {
     getProductInfo();
