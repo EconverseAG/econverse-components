@@ -7,12 +7,19 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Added
+
 - Added new **Similar Products** context.
   - `useSimilarProducts` hook.
   - `SimilarProductsProvider`.
 - Added new **Buy Together** context.
   - `useBuyTogether` hook.
   - `BuyTogetherProvider`.
+
+### Changed
+
+- Remove `Tooltip` component.
+- Remove `Accordion` component.
 
 ## [1.1.0] - 17-05-2022
 
