@@ -1,10 +1,4 @@
 {
-  "e-tooltip": {
-    "component": "Tooltip"
-  },
-  "e-accordion": {
-    "component": "Accordion"
-  },
   "e-iframe": {
     "component": "Iframe"
   },
