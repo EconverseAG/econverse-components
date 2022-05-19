@@ -9,6 +9,7 @@
     "moduleResolution": "node",
     "target": "es2017"
   },
+  "types": ["node"],
   "include": [
     "./typings/*.d.ts",
     "./**/*.tsx",
