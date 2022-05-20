@@ -29,7 +29,8 @@
     "vtex.add-to-cart-button": "0.x",
     "vtex.device-detector": "0.x",
     "vtex.css-handles": "1.x",
-    "vtex.product-context": "0.x"
+    "vtex.product-context": "0.x",
+    "vtex.checkout-resources": "0.x"
   },
   "billingOptions": {
     "type": "free",

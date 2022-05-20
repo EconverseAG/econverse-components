@@ -5,5 +5,8 @@
   "e-toggle-layout": {
     "component": "ToggleLayout",
     "composition": "children"
+  },
+  "e-checkout-button": {
+    "component": "CheckoutButton"
   }
 }
