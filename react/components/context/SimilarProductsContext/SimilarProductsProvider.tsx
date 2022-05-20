@@ -1,22 +1,10 @@
-import React, {
-  createContext,
-  useState,
-  useEffect,
-  useContext,
-  useMemo,
-  useCallback,
-} from 'react';
+import React, { useState, useEffect, useMemo, useCallback } from 'react';
 import axios from 'axios';
 import type { ProductTypes } from 'vtex.product-context';
 import { useProduct } from 'vtex.product-context';
 
-import type {
-  SimilarProductsContextType,
-  SimilarProductsProviderProps,
-} from './useSimilarProducts.types';
-
-const SimilarProductsContext = createContext({} as SimilarProductsContextType);
-const useSimilarProducts = () => useContext(SimilarProductsContext);
+import type { SimilarProductsProviderProps } from './SimilarProductsContext.types';
+import { SimilarProductsContext } from './useSimilarProducts';
 
 function SimilarProductsProvider({
   showUnavailable,
@@ -62,5 +50,4 @@ function SimilarProductsProvider({
   );
 }
 
-export { SimilarProductsProvider, SimilarProductsContext };
-export default useSimilarProducts;
+export { SimilarProductsProvider };

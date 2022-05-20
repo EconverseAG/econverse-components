@@ -1,1 +1,3 @@
-export * from './hooks/useBuyTogether';
+import { useBuyTogether } from './components/context/BuyTogetherContext';
+
+export default useBuyTogether;

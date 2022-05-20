@@ -6,6 +6,14 @@
     "component": "ToggleLayout",
     "composition": "children"
   },
+  "e-buy-together-provider": {
+    "component": "BuyTogetherProvider",
+    "composition": "children"
+  },
+  "e-similar-products-provider": {
+    "component": "SimilarProductsProvider",
+    "composition": "children"
+  },
   "e-checkout-button": {
     "component": "CheckoutButton"
   }
