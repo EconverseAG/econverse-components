@@ -2,7 +2,7 @@ import React from 'react';
 import { Utils } from 'vtex.checkout-resources';
 import { useCssHandles } from 'vtex.css-handles';
 
-import useCheckout from '../../hooks/useCheckout/useCheckout';
+import useCheckout from '../../hooks/useCheckout';
 import CSS_HANDLES from './CheckoutButton.handles';
 import type { CheckoutButtonProps } from './CheckoutButton.types';
 
