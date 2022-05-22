@@ -16,5 +16,8 @@
   },
   "e-checkout-button": {
     "component": "CheckoutButton"
+  },
+  "e-product-specification": {
+    "component": "ProductSpecification"
   }
 }
