@@ -10,20 +10,21 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Added
 
 - Added block classes ability to all components
+- Added new `useOutsideClick` hook.
 
 ## [1.4.0] - 22-05-2022
 
 ### Added
 
-- Added new **useProductSpecification** hook.
-- Added new **ProductSpecification** component.
-- Added new **useCheckout** hook.
+- Added new `useProductSpecification` hook.
+- Added new `e-product-specification` block.
+- Added new `useCheckout` hook.
 
 ## [1.3.0] - 20-05-2022
 
 ### Added
 
-- Added new **CheckoutButton** component.
+- Added new `e-checkout-button` component.
 
 ## [1.2.0] - 19-05-2022
 
@@ -31,20 +32,20 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 - Added new **Similar Products** context.
   - `useSimilarProducts` hook.
-  - `SimilarProductsProvider`.
+  - `e-similar-products-provider` block.
 - Added new **Buy Together** context.
   - `useBuyTogether` hook.
-  - `BuyTogetherProvider`.
+  - `e-buy-together-provider` block.
 
 ### Changed
 
-- Removed `Tooltip` component.
-- Removed `Accordion` component.
+- Removed `e-tooltip` block.
+- Removed `e-accordion` block.
 
 ## [1.1.0] - 17-05-2022
 
-- Added new `ToggleLayout` component.
-- Added new `Iframe` component.
+- Added new `e-toggle-layout` component.
+- Added new `e-iframe` component.
 
 ## [1.0.0]
 
@@ -52,5 +53,5 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Added
 
-- Added new `Accordion` component.
-- Added new `Tooltip` component.
+- Added new `e-accordion` component.
+- Added new `e-tooltip` component.
