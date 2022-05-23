@@ -1,3 +1,3 @@
-import { useBuyTogether } from './components/context/BuyTogetherContext';
+import { useBuyTogether } from './context/BuyTogetherContext';
 
 export default useBuyTogether;

@@ -1,3 +1,3 @@
-import { BuyTogetherProvider } from './components/context/BuyTogetherContext';
+import { BuyTogetherProvider } from './context/BuyTogetherContext';
 
 export default BuyTogetherProvider;

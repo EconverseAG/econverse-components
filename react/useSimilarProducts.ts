@@ -1,3 +1,3 @@
-import { useSimilarProducts } from './components/context/SimilarProductsContext';
+import { useSimilarProducts } from './context/SimilarProductsContext';
 
 export default useSimilarProducts;
