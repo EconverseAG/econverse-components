@@ -3,6 +3,7 @@ import { useCssHandles } from 'vtex.css-handles';
 
 import type IframeProps from './Iframe.types';
 import IframeSchema from './Iframe.schema';
+import IframeHandles from './Iframe.handles';
 
 function Iframe({
   enabled,
@@ -13,9 +14,10 @@ function Iframe({
   frameBorder,
   allowFullScreen,
   allow,
+  classes,
   ...rest
 }: IframeProps) {
-  const { handles } = useCssHandles(['e-iframe']);
+  const { handles } = useCssHandles(IframeHandles, { classes });
 
   return (
     <>

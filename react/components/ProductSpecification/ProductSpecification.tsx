@@ -8,13 +8,17 @@ import type { ProductSpecificationProps } from './ProductSpecification.types';
 
 function ProductSpecification({
   specificationName,
+  classes,
+  ...rest
 }: ProductSpecificationProps) {
-  const { handles } = useCssHandles(ProductSpecificationHandles);
+  const { handles } = useCssHandles(ProductSpecificationHandles, { classes });
 
   const specification = useProductSpecification(specificationName);
 
   return (
-    <span className={handles['e-productSpecification']}>{specification}</span>
+    <span className={handles['e-productSpecification']} {...rest}>
+      {specification}
+    </span>
   );
 }
 
