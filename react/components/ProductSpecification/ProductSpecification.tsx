@@ -16,9 +16,11 @@ function ProductSpecification({
   const specification = useProductSpecification(specificationName);
 
   return (
-    <span className={handles['e-productSpecification']} {...rest}>
-      {specification}
-    </span>
+    <span
+      className={handles['e-productSpecification']}
+      {...rest}
+      dangerouslySetInnerHTML={{ __html: specification }}
+    />
   );
 }
 
