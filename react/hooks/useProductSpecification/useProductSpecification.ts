@@ -7,6 +7,8 @@ function useProductSpecification(specificationName: string) {
   const product = useProduct();
 
   useEffect(() => {
+    if (!specificationName) return;
+
     const value = product?.product?.properties.find(
       (item) => item.name.toLowerCase() === specificationName.toLowerCase(),
     )?.values[0];
