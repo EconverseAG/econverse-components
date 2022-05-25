@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [1.5.1] - 24-05-2022
+
+## Changed
+
+- [`useProductSpecification`] Fixed render error when no `specificationName` is provided.
+
 ## [1.5.0] - 24-05-2022
 
 ### Added
