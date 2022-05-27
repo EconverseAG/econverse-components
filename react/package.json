@@ -24,7 +24,7 @@
     "@types/react": "^17.0.43",
     "@types/styled-components": "^5.1.25",
     "@vtex/tsconfig": "^0.6.0",
-    "econverse.components": "http://econverse.vtexassets.com/_v/public/typings/v1/econverse.components@1.2.0/public/@types/econverse.components",
+    "econverse.components": "http://econverse.vtexassets.com/_v/public/typings/v1/econverse.components@1.5.2/public/@types/econverse.components",
     "typescript": "3.9.7",
     "vtex.add-to-cart-button": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.add-to-cart-button@0.28.0/public/@types/vtex.add-to-cart-button",
     "vtex.breadcrumb": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.breadcrumb@1.9.4/public/@types/vtex.breadcrumb",

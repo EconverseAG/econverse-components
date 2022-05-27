@@ -1554,9 +1554,9 @@ dom-helpers@^3.4.0:
   dependencies:
     "@babel/runtime" "^7.1.2"
 
-"econverse.components@http://econverse.vtexassets.com/_v/public/typings/v1/econverse.components@1.2.0/public/@types/econverse.components":
-  version "1.2.0"
-  resolved "http://econverse.vtexassets.com/_v/public/typings/v1/econverse.components@1.2.0/public/@types/econverse.components#617b80f9ef76f4ab0291e64b36d4aaa9a5455e38"
+"econverse.components@http://econverse.vtexassets.com/_v/public/typings/v1/econverse.components@1.5.2/public/@types/econverse.components":
+  version "1.5.2"
+  resolved "http://econverse.vtexassets.com/_v/public/typings/v1/econverse.components@1.5.2/public/@types/econverse.components#a446cc80d2a2cd40ca6708ee7d9221862f90e8d0"
 
 electron-to-chromium@^1.4.118:
   version "1.4.137"
