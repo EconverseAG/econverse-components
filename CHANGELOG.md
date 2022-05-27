@@ -7,13 +7,13 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [1.5.2] - 24-05-2022
 
-## Added
+### Added
 
 - [`ProductSpecification`] Added HTML support.
 
 ## [1.5.1] - 24-05-2022
 
-## Changed
+### Changed
 
 - [`useProductSpecification`] Fixed render error when no `specificationName` is provided.
 
