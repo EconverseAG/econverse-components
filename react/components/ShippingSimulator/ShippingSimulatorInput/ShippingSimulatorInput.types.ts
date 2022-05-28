@@ -4,6 +4,7 @@ import type ShippingSimulatorInputHandles from './ShippingSimulatorInput.handles
 
 interface ShippingSimulatorInputProps {
   placeholder?: string;
+  cleanErrorsOnChange?: boolean;
   classes?: CssHandlesTypes.CustomClasses<typeof ShippingSimulatorInputHandles>;
   customHandleChange?: (
     event: React.ChangeEvent<HTMLInputElement>,

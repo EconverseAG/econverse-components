@@ -9,20 +9,23 @@ import ShippingSimulatorInputHandles from './ShippingSimulatorInput.handles';
 function ShippingSimulatorInput({
   customHandleChange,
   placeholder,
+  cleanErrorsOnChange = true,
   classes,
   ...rest
 }: ShippingSimulatorInputProps) {
   const { handles } = useCssHandles(ShippingSimulatorInputHandles, { classes });
 
-  const { postalCode, setPostalCode } = useShippingSimulator();
+  const { postalCode, setPostalCode, setError } = useShippingSimulator();
 
   const handleChange = useCallback(
     (e: React.ChangeEvent<HTMLInputElement>) => {
       const newPostalCode = formatCep(e.target.value);
 
+      if (cleanErrorsOnChange) setError('');
+
       setPostalCode(newPostalCode.slice(0, 9));
     },
-    [setPostalCode],
+    [cleanErrorsOnChange, setError, setPostalCode],
   );
 
   return (
