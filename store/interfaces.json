@@ -23,5 +23,12 @@
   "e-shipping-simulator-provider": {
     "component": "ShippingSimulatorProvider",
     "composition": "children"
+  },
+  "e-shipping-simulator-form": {
+    "component": "ShippingSimulatorForm",
+    "composition": "children"
+  },
+  "e-shipping-simulator-input": {
+    "component": "ShippingSimulatorInput"
   }
 }
