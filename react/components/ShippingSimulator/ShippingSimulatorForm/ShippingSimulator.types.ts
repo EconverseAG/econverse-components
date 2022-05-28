@@ -1,6 +1,6 @@
 interface ShippingSimulatorFormProps {
   children: React.ReactNode;
-  customHandleSubmit: (
+  customHandleSubmit?: (
     event: React.FormEvent<HTMLFormElement>,
     callback: (event: React.FormEvent<HTMLFormElement>) => void,
   ) => void;
