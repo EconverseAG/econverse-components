@@ -3,6 +3,7 @@ import type { CssHandlesTypes } from 'vtex.css-handles';
 import type ShippingSimulatorInputHandles from './ShippingSimulatorInputHandles';
 
 interface ShippingSimulatorInputProps {
+  label?: string;
   placeholder?: string;
   classes?: CssHandlesTypes.CustomClasses<typeof ShippingSimulatorInputHandles>;
   customHandleChange?: (

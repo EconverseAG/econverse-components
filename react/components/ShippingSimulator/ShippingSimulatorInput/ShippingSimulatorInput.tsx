@@ -8,6 +8,7 @@ import ShippingSimulatorInputHandles from './ShippingSimulatorInputHandles';
 
 function ShippingSimulatorInput({
   customHandleChange,
+  label,
   placeholder,
   classes,
   ...rest
@@ -26,19 +27,22 @@ function ShippingSimulatorInput({
   );
 
   return (
-    <input
-      type="text"
-      onChange={
-        customHandleChange
-          ? (e) => customHandleChange(e, handleChange)
-          : handleChange
-      }
-      value={postalCode}
-      data-testid="shippingSimulatorInput"
-      placeholder={placeholder}
-      className={handles.shippingSimulatorInput}
-      {...rest}
-    />
+    <>
+      {label && <label className={handles.label}>{label}</label>}
+      <input
+        type="text"
+        onChange={
+          customHandleChange
+            ? (e) => customHandleChange(e, handleChange)
+            : handleChange
+        }
+        value={postalCode}
+        data-testid="shippingSimulatorInput"
+        placeholder={placeholder}
+        className={handles.shippingSimulatorInput}
+        {...rest}
+      />
+    </>
   );
 }
 

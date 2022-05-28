@@ -1,3 +1,3 @@
-const ShippingSimulatorInputHandles = ['shippingSimulatorInput'];
+const ShippingSimulatorInputHandles = ['shippingSimulatorInput', 'label'];
 
 export default ShippingSimulatorInputHandles;
