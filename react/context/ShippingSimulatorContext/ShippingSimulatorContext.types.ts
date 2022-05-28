@@ -6,6 +6,7 @@ interface ShippingSimulatorContextType {
   setPostalCode: React.Dispatch<React.SetStateAction<string>>;
   setError: React.Dispatch<React.SetStateAction<string>>;
   hasError: boolean;
+  isPostalCodeValid: boolean;
 }
 
 interface ShippingSimulatorProviderProps {

@@ -1,4 +1,5 @@
 import React, { useMemo, useState } from 'react';
+import { isCep } from 'econverse-utils';
 
 import type { ShippingSimulatorProviderProps } from './ShippingSimulatorContext.types';
 import { ShippingSimulatorContext } from './useShippingSimulator';
@@ -10,6 +11,7 @@ function ShippingSimulatorProvider({
   const [error, setError] = useState('');
 
   const hasError = useMemo(() => !!error, [error]);
+  const isPostalCodeValid = useMemo(() => isCep(postalCode), [postalCode]);
 
   const contextValue = useMemo(
     () => ({
@@ -18,8 +20,9 @@ function ShippingSimulatorProvider({
       error,
       setError,
       hasError,
+      isPostalCodeValid,
     }),
-    [error, hasError, postalCode],
+    [error, hasError, isPostalCodeValid, postalCode],
   );
 
   return (
