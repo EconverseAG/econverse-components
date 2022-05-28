@@ -75,4 +75,17 @@ describe('ShippingSimulatorForm', () => {
 
     expect(handleChange).toHaveBeenCalled();
   });
+  it('should be able to receive a placeholder text', () => {
+    const { getByTestId } = render(
+      <ShippingSimulatorProvider>
+        <ShippingSimulatorForm>
+          <ShippingSimulatorInput placeholder="Digite seu CEP" />
+        </ShippingSimulatorForm>
+      </ShippingSimulatorProvider>,
+    );
+
+    const input = getByTestId('shippingSimulatorInput');
+
+    expect(input).toHaveAttribute('placeholder', 'Digite seu CEP');
+  });
 });

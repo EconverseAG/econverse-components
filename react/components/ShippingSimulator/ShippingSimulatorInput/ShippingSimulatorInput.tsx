@@ -6,6 +6,7 @@ import type { ShippingSimulatorInputProps } from './ShippingSimulatorInput.types
 
 function ShippingSimulatorInput({
   customHandleChange,
+  placeholder,
   ...rest
 }: ShippingSimulatorInputProps) {
   const { postalCode, setPostalCode } = useShippingSimulator();
@@ -29,6 +30,7 @@ function ShippingSimulatorInput({
       }
       value={postalCode}
       data-testid="shippingSimulatorInput"
+      placeholder={placeholder}
       {...rest}
     />
   );
