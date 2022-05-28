@@ -5,13 +5,10 @@ import { useCssHandles } from 'vtex.css-handles';
 import { useShippingSimulator } from '../../../context/ShippingSimulatorContext';
 import type { ShippingSimulatorInputProps } from './ShippingSimulatorInput.types';
 import ShippingSimulatorInputHandles from './ShippingSimulatorInput.handles';
-import ShippingSimulatorErrorMessage from '../ShippingSimulatorErrorMessage';
 
 function ShippingSimulatorInput({
   customHandleChange,
-  label,
   placeholder,
-  showErrorMessage,
   classes,
   ...rest
 }: ShippingSimulatorInputProps) {
@@ -30,7 +27,6 @@ function ShippingSimulatorInput({
 
   return (
     <>
-      {label && <label className={handles.label}>{label}</label>}
       <input
         type="text"
         onChange={
@@ -44,7 +40,6 @@ function ShippingSimulatorInput({
         className={handles.shippingSimulatorInput}
         {...rest}
       />
-      {showErrorMessage && <ShippingSimulatorErrorMessage classes={classes} />}
     </>
   );
 }
