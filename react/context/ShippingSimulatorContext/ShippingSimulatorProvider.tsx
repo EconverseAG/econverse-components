@@ -7,13 +7,19 @@ function ShippingSimulatorProvider({
   children,
 }: ShippingSimulatorProviderProps) {
   const [postalCode, setPostalCode] = useState('');
+  const [error, setError] = useState('');
+
+  const hasError = useMemo(() => !!error, [error]);
 
   const contextValue = useMemo(
     () => ({
       postalCode,
       setPostalCode,
+      error,
+      setError,
+      hasError,
     }),
-    [postalCode, setPostalCode],
+    [error, hasError, postalCode],
   );
 
   return (

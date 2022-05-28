@@ -30,5 +30,8 @@
   },
   "e-shipping-simulator-input": {
     "component": "ShippingSimulatorInput"
+  },
+  "e-shipping-simulator-error-message": {
+    "component": "ShippingSimulatorErrorMessage"
   }
 }
