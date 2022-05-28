@@ -1,14 +1,19 @@
 import React, { useCallback } from 'react';
 import { formatCep } from 'econverse-utils';
+import { useCssHandles } from 'vtex.css-handles';
 
 import { useShippingSimulator } from '../../../context/ShippingSimulatorContext';
 import type { ShippingSimulatorInputProps } from './ShippingSimulatorInput.types';
+import ShippingSimulatorInputHandles from './ShippingSimulatorInputHandles';
 
 function ShippingSimulatorInput({
   customHandleChange,
   placeholder,
+  classes,
   ...rest
 }: ShippingSimulatorInputProps) {
+  const { handles } = useCssHandles(ShippingSimulatorInputHandles, { classes });
+
   const { postalCode, setPostalCode } = useShippingSimulator();
 
   const handleChange = useCallback(
@@ -31,6 +36,7 @@ function ShippingSimulatorInput({
       value={postalCode}
       data-testid="shippingSimulatorInput"
       placeholder={placeholder}
+      className={handles.shippingSimulatorInput}
       {...rest}
     />
   );
