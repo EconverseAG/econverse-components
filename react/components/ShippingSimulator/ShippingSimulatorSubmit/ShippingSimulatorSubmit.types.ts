@@ -4,6 +4,7 @@ import type ShippingSimulatorSubmitHandles from './ShippingSimulatorSubmit.handl
 
 interface ShippingSimulatorSubmitProps {
   message?: string;
+  disableWhileInvalid?: boolean;
   classes?: CssHandlesTypes.CustomClasses<
     typeof ShippingSimulatorSubmitHandles
   >;

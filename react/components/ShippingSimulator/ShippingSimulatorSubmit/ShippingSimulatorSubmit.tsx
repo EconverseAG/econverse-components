@@ -7,6 +7,7 @@ import type { ShippingSimulatorSubmitProps } from './ShippingSimulatorSubmit.typ
 
 function ShippingSimulatorSubmit({
   message = 'Calcular o frete',
+  disableWhileInvalid,
 }: ShippingSimulatorSubmitProps) {
   const { handles } = useCssHandles(ShippingSimulatorSubmitHandles);
   const { isPostalCodeValid } = useShippingSimulator();
@@ -15,7 +16,7 @@ function ShippingSimulatorSubmit({
     <button
       type="submit"
       className={handles.shippingSimulatorSubmit}
-      disabled={!isPostalCodeValid}
+      disabled={disableWhileInvalid ? !isPostalCodeValid : false}
     >
       {message}
     </button>
