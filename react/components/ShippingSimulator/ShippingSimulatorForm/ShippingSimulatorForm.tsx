@@ -11,10 +11,14 @@ function ShippingSimulatorForm({
   children,
 }: ShippingSimulatorFormProps) {
   const { handles } = useCssHandles(ShippingSimulatorFormHandles, { classes });
-  const { postalCode, setError, isPostalCodeValid } = useShippingSimulator();
+  const {
+    setError,
+    isPostalCodeValid,
+    updateShippingEstimates,
+  } = useShippingSimulator();
 
   const handleSubmit = useCallback(
-    (e: React.FormEvent<HTMLFormElement>) => {
+    async (e: React.FormEvent<HTMLFormElement>) => {
       e.preventDefault();
 
       if (!isPostalCodeValid) {
@@ -23,10 +27,9 @@ function ShippingSimulatorForm({
         return;
       }
 
-      // eslint-disable-next-line no-console
-      console.log('>>> postal code', postalCode, 'is valid!');
+      updateShippingEstimates();
     },
-    [isPostalCodeValid, postalCode, setError],
+    [isPostalCodeValid, setError, updateShippingEstimates],
   );
 
   return (

@@ -3206,9 +3206,9 @@ econverse-utils@^1.1.0:
     axios "^0.26.1"
     global "^4.4.0"
 
-"econverse.components@http://econverse.vtexassets.com/_v/public/typings/v1/econverse.components@1.5.3/public/@types/econverse.components":
+"econverse.components@https://dev--americanflex.myvtex.com/_v/private/typings/linked/v1/econverse.components@1.5.3+build1653771927/public/@types/econverse.components":
   version "1.5.3"
-  resolved "http://econverse.vtexassets.com/_v/public/typings/v1/econverse.components@1.5.3/public/@types/econverse.components#fab351cd5d959b5dc3f56c6b87ad193b68395fc8"
+  resolved "https://dev--americanflex.myvtex.com/_v/private/typings/linked/v1/econverse.components@1.5.3+build1653771927/public/@types/econverse.components#87fcc1ea79a934f6975a6250bf74df38d7edba05"
 
 electron-to-chromium@^1.4.118:
   version "1.4.137"
@@ -6160,6 +6160,10 @@ verror@1.10.0:
   version "0.28.0"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.add-to-cart-button@0.28.0/public/@types/vtex.add-to-cart-button#9d9b0ead453d431c1a5277077614735851526e61"
 
+"vtex.apps-graphql@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.apps-graphql@2.8.0/public/@types/vtex.apps-graphql":
+  version "2.8.0"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.apps-graphql@2.8.0/public/@types/vtex.apps-graphql#4fd47b1281c4d36e8abb1cfa4daea83bc739eca1"
+
 "vtex.breadcrumb@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.breadcrumb@1.9.4/public/@types/vtex.breadcrumb":
   version "1.9.4"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.breadcrumb@1.9.4/public/@types/vtex.breadcrumb#624d6ddbd839bccd2b08e10f0f5f4a0509de834b"
@@ -6212,6 +6216,10 @@ verror@1.10.0:
   version "0.15.0"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.rich-text@0.15.0/public/@types/vtex.rich-text#f23416cea64e72531069e58f1b137dfdb5b4b510"
 
+"vtex.search-graphql@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.search-graphql@0.48.4/public/@types/vtex.search-graphql":
+  version "0.48.4"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.search-graphql@0.48.4/public/@types/vtex.search-graphql#eec68b59672a487a538216c8c65bf2b713604fdf"
+
 "vtex.slider-layout@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.slider-layout@0.22.1/public/@types/vtex.slider-layout":
   version "0.22.1"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.slider-layout@0.22.1/public/@types/vtex.slider-layout#99a036fbcd48fb1d0f12f61e9b5d169f1f8af511"
@@ -6227,6 +6235,10 @@ verror@1.10.0:
 "vtex.store-drawer@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-drawer@0.16.1/public/@types/vtex.store-drawer":
   version "0.16.1"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-drawer@0.16.1/public/@types/vtex.store-drawer#08f723e5cdd01e23be642b4fdbc1225f600ce107"
+
+"vtex.store-graphql@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-graphql@2.152.0/public/@types/vtex.store-graphql":
+  version "2.152.0"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-graphql@2.152.0/public/@types/vtex.store-graphql#ca31214db7b9c3522ae45701732ea79022674ef8"
 
 "vtex.store@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store@2.123.2/public/@types/vtex.store":
   version "2.123.2"
