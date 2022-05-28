@@ -19,5 +19,9 @@
   },
   "e-product-specification": {
     "component": "ProductSpecification"
+  },
+  "e-shipping-simulator-provider": {
+    "component": "ShippingSimulatorProvider",
+    "composition": "children"
   }
 }
