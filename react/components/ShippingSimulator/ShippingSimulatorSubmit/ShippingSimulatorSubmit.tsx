@@ -16,7 +16,7 @@ function ShippingSimulatorSubmit({
     <button
       type="submit"
       className={handles.shippingSimulatorSubmit}
-      disabled={isLoading || disableWhileInvalid ? !isPostalCodeValid : false}
+      disabled={isLoading || (disableWhileInvalid ? !isPostalCodeValid : false)}
     >
       {message}
     </button>
