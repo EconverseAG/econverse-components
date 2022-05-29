@@ -5,36 +5,58 @@ import { useShippingSimulator } from '../../../context/ShippingSimulatorContext'
 import TranslatedEstimate from '../TranslatedEstimate';
 import type { ShippingSimulatorResultsProps } from './ShippingSimulatorResults.types';
 
-function ShippingSimulatorResults({ readOnly }: ShippingSimulatorResultsProps) {
+function ShippingSimulatorResults({
+  readOnly,
+  showTableHeader,
+}: ShippingSimulatorResultsProps) {
   const { logisticsInfo } = useShippingSimulator();
 
   return (
     <>
       {!!logisticsInfo?.length && (
-        <div>
-          {logisticsInfo[0].slas.map((item) => (
-            <div key={item.id}>
-              {readOnly ? (
-                <span>{item.friendlyName}</span>
-              ) : (
-                <label>
-                  <input name="shipping-option" type="radio" value={item.id} />
-                  {item.friendlyName}
-                </label>
-              )}
-              <span>
-                <TranslatedEstimate shippingEstimate={item.shippingEstimate} />
-              </span>
-              <span>
-                {item.price > 0 ? (
-                  <FormattedCurrency value={item.price / 100} />
+        <table>
+          {showTableHeader && (
+            <thead>
+              <tr>
+                <th>Entrega</th>
+                <th>Prazo</th>
+                <th>Valor</th>
+              </tr>
+            </thead>
+          )}
+          <tbody>
+            {logisticsInfo[0].slas.map((item) => (
+              <tr key={item.id}>
+                {readOnly ? (
+                  <td>{item.friendlyName}</td>
                 ) : (
-                  'Grátis'
+                  <td>
+                    <label>
+                      <input
+                        name="shipping-option"
+                        type="radio"
+                        value={item.id}
+                      />
+                      {item.friendlyName}
+                    </label>
+                  </td>
                 )}
-              </span>
-            </div>
-          ))}
-        </div>
+                <td>
+                  <TranslatedEstimate
+                    shippingEstimate={item.shippingEstimate}
+                  />
+                </td>
+                <td>
+                  {item.price > 0 ? (
+                    <FormattedCurrency value={item.price / 100} />
+                  ) : (
+                    'Grátis'
+                  )}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
       )}
     </>
   );
