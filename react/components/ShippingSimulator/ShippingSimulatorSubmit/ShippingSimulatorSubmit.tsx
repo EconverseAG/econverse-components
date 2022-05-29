@@ -10,13 +10,13 @@ function ShippingSimulatorSubmit({
   disableWhileInvalid,
 }: ShippingSimulatorSubmitProps) {
   const { handles } = useCssHandles(ShippingSimulatorSubmitHandles);
-  const { isPostalCodeValid } = useShippingSimulator();
+  const { isPostalCodeValid, isLoading } = useShippingSimulator();
 
   return (
     <button
       type="submit"
       className={handles.shippingSimulatorSubmit}
-      disabled={disableWhileInvalid ? !isPostalCodeValid : false}
+      disabled={isLoading || disableWhileInvalid ? !isPostalCodeValid : false}
     >
       {message}
     </button>

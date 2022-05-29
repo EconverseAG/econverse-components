@@ -3223,10 +3223,6 @@ econverse-utils@^1.1.0:
     axios "^0.26.1"
     global "^4.4.0"
 
-"econverse.components@https://dev--americanflex.myvtex.com/_v/private/typings/linked/v1/econverse.components@1.5.3+build1653777136/public/@types/econverse.components":
-  version "1.5.3"
-  resolved "https://dev--americanflex.myvtex.com/_v/private/typings/linked/v1/econverse.components@1.5.3+build1653777136/public/@types/econverse.components#7c5214acd0083866f81a4a03bc59742407653011"
-
 electron-to-chromium@^1.4.118:
   version "1.4.137"
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.137.tgz#186180a45617283f1c012284458510cd99d6787f"
@@ -6244,9 +6240,9 @@ verror@1.10.0:
   version "2.152.0"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-graphql@2.152.0/public/@types/vtex.store-graphql#ca31214db7b9c3522ae45701732ea79022674ef8"
 
-"vtex.store@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store@2.123.2/public/@types/vtex.store":
-  version "2.123.2"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store@2.123.2/public/@types/vtex.store#5e5ea6040baa0cda5f5ba6a3390b0a05a17717aa"
+"vtex.store@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store@2.125.0/public/@types/vtex.store":
+  version "2.125.0"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store@2.125.0/public/@types/vtex.store#2fcc423f7d8b1eaaf3eb5422afb52a91729a75e2"
 
 "vtex.tab-layout@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.tab-layout@0.4.3/public/@types/vtex.tab-layout":
   version "0.4.3"

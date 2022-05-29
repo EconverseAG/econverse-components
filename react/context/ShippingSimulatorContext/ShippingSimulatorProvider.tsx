@@ -16,6 +16,7 @@ function ShippingSimulatorProvider({
   children,
 }: ShippingSimulatorProviderProps) {
   const [postalCode, setPostalCode] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState('');
   const [logisticsInfo, setLogisticsInfo] = useState([] as LogisticsInfo[]);
 
@@ -27,6 +28,8 @@ function ShippingSimulatorProvider({
   const isPostalCodeValid = useMemo(() => isCep(postalCode), [postalCode]);
 
   const updateShippingEstimates = useCallback(async () => {
+    setIsLoading(true);
+
     const result = await client
       .query({
         query: getShippingEstimates,
@@ -57,6 +60,7 @@ function ShippingSimulatorProvider({
 
     setLogisticsInfo(result.data.shipping.logisticsInfo);
     setError('');
+    setIsLoading(false);
   }, [client, culture, postalCode, productContext]);
 
   const contextValue = useMemo(
@@ -69,14 +73,16 @@ function ShippingSimulatorProvider({
       hasError,
       isPostalCodeValid,
       updateShippingEstimates,
+      isLoading,
     }),
     [
+      postalCode,
       error,
+      logisticsInfo,
       hasError,
       isPostalCodeValid,
-      postalCode,
-      logisticsInfo,
       updateShippingEstimates,
+      isLoading,
     ],
   );
 
