@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [1.6.1] - 29-05-2022
 
+### Added
+
+- Added portuguese, english and spanish translations to shipping estimates.
+
 ### Changed
 
 - `e-shipping-simulator-submit` disables while simulation is loading.
