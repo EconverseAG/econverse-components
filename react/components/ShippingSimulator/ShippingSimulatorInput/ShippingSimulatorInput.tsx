@@ -39,6 +39,7 @@ function ShippingSimulatorInput({
         }
         value={postalCode}
         data-testid="shippingSimulatorInput"
+        name="postalCode"
         placeholder={placeholder}
         className={handles.shippingSimulatorInput}
         {...rest}
