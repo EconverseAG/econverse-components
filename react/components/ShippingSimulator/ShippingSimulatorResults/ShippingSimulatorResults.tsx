@@ -32,45 +32,45 @@ function ShippingSimulatorResults({
             </thead>
           )}
           <tbody className={handles.tableBody}>
-            {logisticsInfo[0].slas.map((item) => (
-              <tr key={item.id} className={handles.tableRow}>
-                {readOnly ? (
-                  <td
-                    className={`${handles.tableCell} ${handles.shippingName}`}
-                  >
-                    {item.friendlyName}
-                  </td>
-                ) : (
-                  <td
-                    className={`${handles.tableCell} ${handles.shippingOption}`}
-                  >
-                    <label className={handles.shippingOptionLabel}>
-                      <input
-                        name="shipping-option"
-                        type="radio"
-                        value={item.id}
-                        className={handles.shippingOptionInput}
-                      />
-                      {item.friendlyName}
-                    </label>
-                  </td>
-                )}
-                <td
-                  className={`${handles.tableCell} ${handles.shippingEstimate}`}
-                >
-                  <TranslatedEstimate
-                    shippingEstimate={item.shippingEstimate}
-                  />
-                </td>
-                <td className={`${handles.tableCell} ${handles.price}`}>
-                  {item.price > 0 ? (
-                    <FormattedCurrency value={item.price / 100} />
+            {logisticsInfo[0].slas.map(
+              ({ friendlyName, price, shippingEstimate }) => (
+                <tr key={friendlyName} className={handles.tableRow}>
+                  {readOnly ? (
+                    <td
+                      className={`${handles.tableCell} ${handles.shippingName}`}
+                    >
+                      {friendlyName}
+                    </td>
                   ) : (
-                    'Grátis'
+                    <td
+                      className={`${handles.tableCell} ${handles.shippingOption}`}
+                    >
+                      <label className={handles.shippingOptionLabel}>
+                        <input
+                          name="shipping-option"
+                          type="radio"
+                          value={friendlyName}
+                          className={handles.shippingOptionInput}
+                        />
+                        {friendlyName}
+                      </label>
+                    </td>
                   )}
-                </td>
-              </tr>
-            ))}
+                  <td
+                    className={`${handles.tableCell} ${handles.shippingEstimate}`}
+                  >
+                    <TranslatedEstimate shippingEstimate={shippingEstimate} />
+                  </td>
+                  <td className={`${handles.tableCell} ${handles.price}`}>
+                    {price > 0 ? (
+                      <FormattedCurrency value={price / 100} />
+                    ) : (
+                      'Grátis'
+                    )}
+                  </td>
+                </tr>
+              ),
+            )}
           </tbody>
         </table>
       )}
