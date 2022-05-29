@@ -33,7 +33,8 @@
     "vtex.checkout-resources": "0.x",
     "vtex.search-graphql": "0.x",
     "vtex.apps-graphql": "2.x",
-    "vtex.store-graphql": "2.x"
+    "vtex.store-graphql": "2.x",
+    "vtex.format-currency": "0.x"
   },
   "billingOptions": {
     "type": "free",

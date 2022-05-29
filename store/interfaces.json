@@ -36,5 +36,8 @@
   },
   "e-shipping-simulator-submit": {
     "component": "ShippingSimulatorSubmit"
+  },
+  "e-shipping-simulator-results": {
+    "component": "ShippingSimulatorResults" 
   }
 }
