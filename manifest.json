@@ -1,7 +1,7 @@
 {
   "vendor": "econverse",
   "name": "components",
-  "version": "1.5.3",
+  "version": "1.6.0",
   "builders": {
     "styles": "2.x",
     "store": "0.x",
