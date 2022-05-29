@@ -6,34 +6,28 @@ import TranslatedEstimate from '../TranslatedEstimate';
 import type { ShippingSimulatorResultsProps } from './ShippingSimulatorResults.types';
 
 function ShippingSimulatorResults({ readOnly }: ShippingSimulatorResultsProps) {
-  const { shippingEstimates } = useShippingSimulator();
+  const { logisticsInfo } = useShippingSimulator();
 
   return (
     <>
-      {shippingEstimates?.logisticsInfo?.length && (
+      {!!logisticsInfo?.length && (
         <div>
-          {shippingEstimates?.logisticsInfo[0].slas.map((shippingEstimate) => (
-            <div key={shippingEstimate.id}>
+          {logisticsInfo[0].slas.map((item) => (
+            <div key={item.id}>
               {readOnly ? (
-                <span>{shippingEstimate.friendlyName}</span>
+                <span>{item.friendlyName}</span>
               ) : (
                 <label>
-                  <input
-                    name="shipping-option"
-                    type="radio"
-                    value={shippingEstimate.id}
-                  />
-                  {shippingEstimate.friendlyName}
+                  <input name="shipping-option" type="radio" value={item.id} />
+                  {item.friendlyName}
                 </label>
               )}
               <span>
-                <TranslatedEstimate
-                  shippingEstimate={shippingEstimate.shippingEstimate}
-                />
+                <TranslatedEstimate shippingEstimate={item.shippingEstimate} />
               </span>
               <span>
-                {shippingEstimate.price > 0 ? (
-                  <FormattedCurrency value={shippingEstimate.price / 100} />
+                {item.price > 0 ? (
+                  <FormattedCurrency value={item.price / 100} />
                 ) : (
                   'Grátis'
                 )}

@@ -5,7 +5,7 @@ import { useRuntime } from 'vtex.render-runtime';
 import { useProduct } from 'vtex.product-context';
 
 import type {
-  ShippingEstimates,
+  LogisticsInfo,
   ShippingSimulatorProviderProps,
 } from './ShippingSimulatorContext.types';
 import { ShippingSimulatorContext } from './useShippingSimulator';
@@ -17,9 +17,7 @@ function ShippingSimulatorProvider({
 }: ShippingSimulatorProviderProps) {
   const [postalCode, setPostalCode] = useState('');
   const [error, setError] = useState('');
-  const [shippingEstimates, setShippingEstimates] = useState(
-    {} as ShippingEstimates,
-  );
+  const [logisticsInfo, setLogisticsInfo] = useState([] as LogisticsInfo[]);
 
   const productContext = useProduct();
   const client = useApolloClient();
@@ -57,9 +55,9 @@ function ShippingSimulatorProvider({
       return;
     }
 
-    setShippingEstimates(result.data.shipping);
+    setLogisticsInfo(result.data.shipping.logisticsInfo);
     setError('');
-  }, [client, culture.country, postalCode, productContext]);
+  }, [client, culture, postalCode, productContext]);
 
   const contextValue = useMemo(
     () => ({
@@ -67,7 +65,7 @@ function ShippingSimulatorProvider({
       setPostalCode,
       error,
       setError,
-      shippingEstimates,
+      logisticsInfo,
       hasError,
       isPostalCodeValid,
       updateShippingEstimates,
@@ -77,7 +75,7 @@ function ShippingSimulatorProvider({
       hasError,
       isPostalCodeValid,
       postalCode,
-      shippingEstimates,
+      logisticsInfo,
       updateShippingEstimates,
     ],
   );

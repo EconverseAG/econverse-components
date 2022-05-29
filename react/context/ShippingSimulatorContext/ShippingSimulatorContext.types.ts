@@ -15,15 +15,10 @@ interface LogisticsInfo {
   __typename: string;
 }
 
-interface ShippingEstimates {
-  logisticsInfo: LogisticsInfo[];
-  __typename: string;
-}
-
 interface ShippingSimulatorContextType {
   postalCode: string;
   error: string;
-  shippingEstimates: ShippingEstimates;
+  logisticsInfo: LogisticsInfo[];
   setPostalCode: React.Dispatch<React.SetStateAction<string>>;
   setError: React.Dispatch<React.SetStateAction<string>>;
   hasError: boolean;
@@ -38,7 +33,6 @@ interface ShippingSimulatorProviderProps {
 export {
   ShippingSimulatorContextType,
   ShippingSimulatorProviderProps,
-  ShippingEstimates,
   LogisticsInfo,
   Slas,
 };
