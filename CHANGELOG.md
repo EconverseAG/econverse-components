@@ -9,7 +9,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Added
 
-- [***Possibly* BREAKING CHANGE**] - Added `messages@1.x` builder
+- [***Possibly* BREAKING CHANGE**] - Added `messages@1.x` builder.
+- Added `title` prop to `e-shipping-simulator-input`.
 - Added portuguese, english and spanish translations to shipping estimates.
 
 ### Changed

@@ -7,6 +7,7 @@ import type { ShippingSimulatorInputProps } from './ShippingSimulatorInput.types
 import ShippingSimulatorInputHandles from './ShippingSimulatorInput.handles';
 
 function ShippingSimulatorInput({
+  title = 'postalCode',
   customHandleChange,
   placeholder,
   cleanErrorsOnChange = true,
@@ -32,6 +33,7 @@ function ShippingSimulatorInput({
     <>
       <input
         type="text"
+        title={title}
         onChange={
           customHandleChange
             ? (e) => customHandleChange(e, handleChange)
