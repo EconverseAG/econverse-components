@@ -5,6 +5,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [1.6.0] - 29-05-2022
+
+### Added
+
+- Added new **Shipping Simulator** context and components.
+  - `e-shipping-simulator-provider` block.
+  - `e-shipping-simulator-form` block.
+  - `e-shipping-simulator-input` block.
+  - `e-shipping-simulator-submit` block.
+  - `e-shipping-simulator-results` block.
+  - `useShippingSimulator` hook.
+  - `TranslatedEstimate` component.
+
 ## [1.5.3] - 27-05-2022
 
 ### Fixed
