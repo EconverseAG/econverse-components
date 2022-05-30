@@ -13,4 +13,14 @@ interface TranslatedEstimateProps {
   scheduled?: DeliveryWindow;
 }
 
-export { TranslatedEstimateProps, DeliveryWindow };
+interface HardCodedEstimateParams {
+  translateId: string;
+  scheduledWindow: {
+    date: string | null;
+    startDate: string | null;
+    endDate: string | null;
+  };
+  timeAmount: string;
+}
+
+export { TranslatedEstimateProps, DeliveryWindow, HardCodedEstimateParams };
