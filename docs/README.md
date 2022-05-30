@@ -12,6 +12,11 @@ To use this app, you must import it as peer dependency in the `manifest.json` fi
 }
 ```
 
+Since it is a peer dependency, you need to install it to your store using VTEX CLI.
+```cmd
+vtex install econverse.components@2.x
+```
+
 Then, you can start adding components to your store theme app.
 
 ## Styles API
