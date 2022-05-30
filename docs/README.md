@@ -19,6 +19,8 @@ vtex install econverse.components@2.x
 
 Then, you can start adding components to your store theme app.
 
+⚠️ *If you are using it in a React app, don't forget to run `vtex setup --typings` in your project to install the correct TypeScript types exported by this app.*
+
 ## Styles API
 
 The Econverse Components collection provides some CSS classes as an API for style customization.
