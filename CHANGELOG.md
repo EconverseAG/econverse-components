@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [Unreleased]
 
 - Added `Button` component.
+- Added `e-back-to-top-button` block.
 
 ## [2.0.1] 29-05-2022
 
