@@ -39,5 +39,9 @@
   },
   "e-shipping-simulator-results": {
     "component": "ShippingSimulatorResults" 
+  },
+  "e-back-to-top-button": {
+    "component": "BackToTopButton",
+    "composition": "children"
   }
 }
