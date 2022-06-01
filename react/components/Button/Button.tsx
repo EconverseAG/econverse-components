@@ -20,7 +20,7 @@ function Button({
       disabled={disabled}
       type={type}
       onClick={onClick}
-      className={`pointer ${handles.button}`}
+      className={`${handles.button} pointer bw0 flex justify-center items-center`}
       {...rest}
     >
       {text ?? children}
