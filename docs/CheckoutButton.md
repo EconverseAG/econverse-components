@@ -7,7 +7,7 @@ The `e-checkout-button` block is a button that redirects users to checkout page 
 1. Import the `econverse.components` app to your theme's peer dependencies in the `manifest.json`
 ```diff
 "peerDependencies": {
-+ "econverse.components": "2.x"
++ "econverse.components": "3.x"
 }
 ```
 

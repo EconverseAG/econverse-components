@@ -8,13 +8,13 @@ To use this app, you must import it as peer dependency in the `manifest.json` fi
 
 ```diff
 "peerDependencies": {
-+ "econverse.components": "2.x"
++ "econverse.components": "3.x"
 }
 ```
 
 Since it is a peer dependency, you need to install it to your store using VTEX CLI.
 ```cmd
-vtex install econverse.components@2.x
+vtex install econverse.components@3.x
 ```
 
 Then, you can start adding components to your store theme app.
