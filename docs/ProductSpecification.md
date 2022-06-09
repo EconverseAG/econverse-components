@@ -4,12 +4,7 @@ The `e-product-specification` block renders a specification given a name.
 
 ## Configuration
 
-1. Import the `econverse.components` app to your theme's peer dependencies in the `manifest.json`.
-```diff
-"peerDependencies": {
-+ "econverse.components": "3.x"
-}
-```
+1. If you haven't installed `econverse.components` in your store yet, [read usage instructions](./README.md#usage) before proceding.
 2. Add the `e-product-specification` to any template of your choice.
 3. Then, declare the `e-product-specification` block using the props stated in the Props table. For example:
 ```jsonc

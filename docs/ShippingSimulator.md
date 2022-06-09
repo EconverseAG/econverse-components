@@ -11,12 +11,7 @@ The Econverse Components' shipping simulator features six components and a conte
 
 ## Configuration
 
-1. Import the `econverse.components` app to your theme's peer dependencies in the `manifest.json`.
-```diff
-"peerDependencies": {
-+ "econverse.components": "3.x"
-}
-```
+1. If you haven't installed `econverse.components` in your store yet, [read usage instructions](./README.md#usage) before proceding.
 2. Add the `e-shipping-simulator-provider` to any template of your choice.
 3. Then, declare the `e-shipping-simulator-provider` block using the `e-shipping-simulator-form` as child. For example:
 ```jsonc
