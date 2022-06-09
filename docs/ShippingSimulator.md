@@ -1,13 +1,6 @@
 # Shipping Simulator
 
-The Econverse Components' shipping simulator features six components and a context provider to give flexibility for any layout you want. Before we begin, here are all the components we are going to use:
-
-- ShippingSimulatorProvider
-- ShippingSimulatorForm
-- ShippingSimulatorInput
-- ShippingSimulatorSubmit
-- ShippingSimulatorErrorMessage
-- TranslatedEstimate
+The Econverse Components' shipping simulator features four components and a context provider to give flexibility for any layout you want. Check [Related Components](#related-components) section for more information.
 
 ## Configuration
 
@@ -19,7 +12,7 @@ The Econverse Components' shipping simulator features six components and a conte
   "children": ["e-shipping-simulator-form"]
 }
 ```
-4. Now, declare the `e-shipping-simulator-form` block and feel free to fill it the way you want, using the previously listed components. For the following example, we will be featuring a simple rich text as label, a "Don't know my postal code" link and put the form elements (input and submit) next to each other using `flex-layout`:
+4. Now, declare the `e-shipping-simulator-form` block and feel free to fill it the way you want, using the previously listed components. For the following example, we will be featuring a simple rich text as label, a "Don't know my postal code" link and put the form fielsd (input and submit) next to each other using `flex-layout`:
 ```jsonc
 "e-shipping-simulator-provider": {
   "children": ["e-shipping-simulator-form"]
@@ -33,14 +26,12 @@ The Econverse Components' shipping simulator features six components and a conte
     "e-shipping-simulator-results"
   ]
 },
-
 "rich-text#shipping-simulator-label": {
   "props": {
     "blockClass": "shipping-simulator-label",
     "text": "Calcular frete"
   }
 },
-
 "flex-layout.row#shipping-simulator-fields": {
   "children": ["e-shipping-simulator-input", "e-shipping-simulator-submit"],
   "props": {
@@ -53,7 +44,6 @@ The Econverse Components' shipping simulator features six components and a conte
     "disableWhileInvalid": true
   }
 },
-
 "link#dont-know-my-cep": {
   "props": {
     "label": "Não sei meu CEP",
@@ -62,7 +52,6 @@ The Econverse Components' shipping simulator features six components and a conte
     "blockClass": "dont-know-my-cep"
   }
 },
-
 "e-shipping-simulator-results": {
   "props": {
     "readOnly": true
@@ -70,16 +59,11 @@ The Econverse Components' shipping simulator features six components and a conte
 }
 ```
 
-### Props
+## Related Components
 
-| Prop name           | Type     | Description                               | Default Value |
-|---------------------|----------|-------------------------------------------|---------------|
-| `specificationName` | `string` | Name of the specification to be rendered. | -             |             |
+- [`shipping-simulator-provider`]()
+- [`shipping-simulator-form`]()
+- [`shipping-simulator-input`]()
+- [`shipping-simulator-submit`]()
+- [`shipping-simulator-error-message`]()
 
-## Customization
-
-To apply CSS customizations in this and other blocks, follow the [Using CSS handles for store customization](https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-using-css-handles-for-store-customization) guide.
-
-| CSS Handles        |
-|--------------------|
-| `e-productSpecification` |
