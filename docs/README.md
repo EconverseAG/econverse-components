@@ -1,20 +1,17 @@
 # Econverse Components
 
-Econverse Components is a collection of components that can be used to create/extend others VTEX apps.
+Econverse Components is a collection of components that can be used to create/extend other VTEX apps.
 
 ## Usage
 
-To use this app, you must import it as peer dependency in the `manifest.json` file.
+**IMPORTANT:** The store must have the latest version of Econverse Edition App `econverse.edition-store` installed. If it is not, [open a ticket](https://help.vtex.com/pt/support) requesting the installation.
+
+To use this app, you need to import it as a dependency in the `manifest.json` file.
 
 ```diff
-"peerDependencies": {
+"dependencies": {
 + "econverse.components": "3.x"
 }
-```
-
-Since it is a peer dependency, you need to install it to your store using VTEX CLI.
-```cmd
-vtex install econverse.components@3.x
 ```
 
 Then, you can start adding components to your store theme app.
@@ -27,7 +24,7 @@ The Econverse Components collection provides some CSS classes as an API for styl
 
 1. Add the `styles` builder to your `manifest.json`:
 ```diff
-"`builders`": {
+"builders": {
 + "styles": "2.x"
 }
 ```
